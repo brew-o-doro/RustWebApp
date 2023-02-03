@@ -19,4 +19,15 @@ fn app() -> Html {
             })
         })
     }
+
+    html! {
+        <div>
+            <button {onclick}>{"+1"}</button>
+            <p>{ state.value }</p>
+        </div>
+    }
+}
+
+fn main(){
+    yew::start_app::<App>():
 }
